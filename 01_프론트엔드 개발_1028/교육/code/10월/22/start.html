@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>스타일 상속</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+            
+            .krnoto {
+            font-family: "Noto Serif KR", serif;
+            font-optical-sizing: auto;            
+            };
+
+            body{
+                color: blue;
+            }
+            p{
+                font-family: "Noto Serif KR", serif;
+                font-optical-sizing: auto;  
+            }            
+            .heading{
+                color:red;
+            }
+            #habor{
+                border: 1pc solid gray;
+                padding: 10px;
+                color: brown;
+            }
+            /* h2{
+                color: brown !important;
+            } */
+            h2{
+                font-size: 20;
+                color: brown;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <!-- <h1 class="heading" id="habor">세계 3대 미항</h1>
+        <h2 style="color:green;">이지스퍼블리싱의 미션</h2> -->
+        <h2 class="krnoto">웹 문서의 디자인</h2>
+        <p>웹 표준에 의한</p>
+        <p>내용은 HTML을 이용해</p>
+    </body>
+
+</html>

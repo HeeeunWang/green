@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>웹 개발 학습 리트릿 예약</title>
+        <style>
+            *{
+                line-height: 1.8;
+                box-sizing: border-box;
+            }
+            h1{
+                font-size: 25px;
+            }
+            h2{
+                font-size: 15px;
+                margin: 0px;
+                padding-bottom: 10px;
+                line-height: 1.1;
+            }            
+            .boxh1{                
+                margin: 0px;
+                padding: 10px 0;
+            }
+            header{
+                padding: 0;
+                margin: 0;
+                background-image: url("아노코.jpg");
+                height: 200px;
+                margin-bottom: 0px;
+                background-size: cover;
+                min-width: 1200px;
+            }
+            header h1{
+                padding: 0;
+                margin: 0;
+                float: left;
+                color: white;
+                font-size: 25px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }    
+            ul{
+                list-style-type: square;
+            }       
+            .navi{
+                bottom: 00px;
+                background-color: rgb(21, 44, 21);
+                height: 70px auto;                
+            }
+            .navi a, .navi a:visited{
+                color: white;
+            }
+            .navi a:hover, .navi a:active, .navi a:focus{
+                text-shadow: 0px 2px 2px black;
+                color: skyblue;
+            }
+            .navi ul{
+                list-style-type: none;
+                margin-top: 0;
+            }
+            .navi ul li{
+                display:inline-block;
+                color: white;
+                width: 130px;
+                vertical-align: left;
+                text-align: center;
+                margin: 8px;
+                margin-left: 0;
+            }
+            .mainbox{
+                min-width: 1200px;
+                background: rgb(238, 234, 220);
+                width: 100%;
+                /* height: 1000px; */
+                display: flex;
+                justify-content: center;
+                padding: 20px 0px;
+            }
+            .box1, .box2, .box3{
+                background: rgb(241, 240, 230);
+                border: 2px solid rgb(190, 189, 174);
+                /* border-radius: 10px; */
+                margin: 10px;
+                min-height: 1000px;
+                padding: 25px;
+            }
+            .box1, .box2{
+                width: 23%;
+            }
+            .box3{
+                width: 35%;
+            }
+            .box1box{
+                height: 150px;
+                width: 100%;
+                padding: 10px;
+                border: 1px solid gray;
+                background: rgb(238, 234, 220);
+            }
+            form{
+                margin-top: 20px;
+            }
+            table, th, td{
+                border: 1px solid gray;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 13px;
+            }
+            table{
+                width: 100%;
+            }
+            th, td{
+                width: 80px;
+                padding: 5px;
+            } 
+            thead{
+                background: rgb(238, 234, 220);
+                font-weight: bold;
+            }
+            fieldset{                
+                border: 1px solid gray;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            
+            fieldset div{
+                padding: 10px;
+                float: left;
+                width: 100%
+            }
+            .half{
+                width: 50%;
+            }
+            .buttonset{
+                float: left;
+                margin-top: 15px;
+                width: 45%;
+                margin: 10px;
+                height: 45px;
+                font-size: 15px;
+                color: white;
+                background: rgb(21, 44, 21);
+            }
+            .buttonset:hover{
+                background: rgb(49, 77, 49);
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>            
+            <nav class="navi">
+                <ul>
+                    <h1>WEB Retreat</h1>
+                    <li><a herf="#" alt="" target="_blank">리트릿 소개</a></li>
+                    <li><a herf="#" alt="" target="_blank">학습 일정</a></li>
+                    <li><a herf="#" alt="" target="_blank">객실 예약</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="mainbox">
+            <div class="box1">
+                <h1 class="boxh1">웹 개발 학습 리트릿</h1>
+                <h2>Learning Retreat</h2>
+                <p>배움과 럭셔리의 완벽한 조화</p>
+                <div>
+                    <ul>
+                        <li>HTML5 & CSS 기초 마스터</li>
+                        <li>실습 중심 프로젝트 개발</li>
+                        <li>현대적인 웹 표준</li>
+                        <li>HTML5 & CSS 기초 마스터</li>
+                    </ul>
+                </div>
+                <p>
+                    현대적이고 구조화된 웹 페이지 구축 방법을 배우세요. 구조(<mark>핵심 개념</mark>) 및 스타일과 같은 기초 요소를 마스터하세요
+                </p>   
+                <div class="box1box">
+                    <pre>
+pre 태그를 사용하면
+공백이나
+줄바꿈이 입력된 그대로 유지!
+                    </pre>
+                </div>       
+            </div>
+            <div class="box2">
+                <h1 class="boxh1">주간 학습 여정</h1>
+                <h2>Journey</h2>
+                <p></p>
+                <table>
+                    <caption style="text-align: left;">
+                        HTML5 학습 일정
+                    </caption>
+                    <thead>
+                        <tr>
+                            <td>주차</td>
+                            <td>주제</td>
+                            <td>실습 내용</td>
+                            <td>진행 방식</td>
+                        </tr>
+                    </thead>                    
+                    <tr>
+                        <td>week1</td>
+                        <td colspan="2">foundation-텍스트 및 목록 구조 마스터</td>
+                        <td>온라인</td>  
+                    </tr>
+                    <tr>
+                        <td rowspan="2">week2</td>
+                        <td rowspan="2">application</td>
+                        <td>이력서폼 & 멀티미디어</td>
+                        <td>대면</td>
+                    </tr>
+                    <tr>
+                        <td>비디오/오디오 삽입</td>
+                        <td>대면</td>
+                    </tr>
+                </table>
+                <p style="text-align: center; font-size: 15px;">2주 과정 수료 시 인증서 수여</p>
+            </div>
+            <div class="box3">
+                <h1 class="boxh1">오션 스위트 예약</h1>
+                <h2>* 당신의 완벽한 휴식을 위한 프리미엄 객실을 예약하세요</h2>
+                <form>
+                    <fieldset>
+                        <legend><strong> 연락처 정보 </strong></legend>
+                        <div>
+                            <label>이름<input type="text" placeholder="실명을 입력하세요" style="color:gray; width: 100%" ></label>
+                        </div>                        
+                        <div class="half">
+                            <label>전화번호<br><input type="tel" placeholder="010-0000-0000" style="width: 100%"></label>
+                        </div>
+                        <div class="half">
+                            <label>이메일주소<br><input type="email" placeholder="example@mail.com" style="width: 100%"><br></label>
+                        </div>        
+                    </fieldset>
+                    <fieldset>
+                        <legend><strong> 예약 상세 </strong></legend>
+                        <div style="width: 40%;">
+                            <label>도착 날짜<br><input type="date" style="width: 100%"></label>
+                        </div>
+                        <div style="width: 40%;">
+                            <label>객실 유형<br>
+                                <select style="width: 100%; height: 30px;">
+                                    <option>오션뷰 스위트</option>
+                                    <option>비지프론트 빌라</option>
+                                    <option>가튼 스위트</option>
+                                </select>
+                            </label>
+                            
+                        </div>
+                        <div style="width: 20%;">
+                            <label>투숙 인원<br><input type="number" value="2" style="width: 100%"></label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><strong> 추가 옵션 </strong></legend>
+                        <div>
+                            식사 서비스: 
+                                <label><input type="radio" name="breakfast">조식 포함</label>
+                                <label><input type="radio" name="breakfast">포함 안함</label>
+                                <br>                       
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="serv">리조트 픽업 서비스</label>
+                            <label><input type="checkbox" name="serv">레이트 체크아웃</label>  
+                        </div>
+                        <div>
+                            <label>
+                                특별 요청사항<br>
+                                <textarea style="width: 100%; height: 80px;"></textarea>
+                            </label>                            
+                        </div>
+                    </fieldset>
+                    <input class= "buttonset" type="submit" value="예약확정">
+                    <input class= "buttonset" type="reset" value="처음부터 다시">
+                </form>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>

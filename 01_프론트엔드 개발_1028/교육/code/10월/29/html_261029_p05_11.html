@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>블루베리 팔아요</title>
+        <script>
+            var count_nfnc = 0;
+            var count_afnc = 0;
+            myFnc();
+            function myFnc(){
+                count_nfnc++;
+                document.write("일반 함수 ", count_nfnc,"번째 호출<br>")
+            }
+            myFnc();
+            var theFnc = function(){
+                count_afnc++;
+                document.write("익명 함수 ", count_afnc,"번째 호출<br>")
+            }
+            theFnc();
+
+            var a=5, b, c;
+            function ccc(){
+                var a= 7;
+                b= a+5;
+                c= b+5;
+                document.write("지역 a= "+a+"<br>");
+                document.write("지역 b= a+5= "+b+"<br>");
+                document.write("지역 c= b+5= "+c+"<br>")
+            }            
+            function aaa(){
+                document.write("전역 a= "+a+"<br>");
+                b= a+5;
+                document.write("전역 b= a+5= "+b+"<br>");
+            }
+            function bbb(){
+                c= b+5;
+                document.write("전역 c= b+5= "+c+"<br>")
+            }            
+            ccc();
+            aaa();
+            bbb();
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

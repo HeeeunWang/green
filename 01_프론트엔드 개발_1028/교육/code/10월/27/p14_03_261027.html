@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8" name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>가변 요소</title>
+        <style>
+            #wrapper{
+                width: 96%;
+                margin: 0 auto;
+                font-size: 12px;
+            }
+            .header{
+                width: 100%;
+                height: 120px;
+                background: blue;
+            }
+            .headertext{
+                font-size: 2em;
+            }
+            .fluidtext{
+                font-size: 1.5em;
+            }
+            .content{
+                float: left;
+                width: 62.5%;
+                height: 400px;
+                padding: 1.5625%;
+            }
+            .side{
+                float: right;
+                width: 31.25%;
+                height: 400px;
+                padding: 1.5625%;
+            }
+            /* .content img{
+
+            } */
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="headertext">
+                <p>가변 그리드 레이아웃</p>
+                <p class="fluidtext">가변 폰트</p>
+            </header>
+        </div>
+    </body>
+</html>
+
+<!-- 
+em->24->36
+rem->24->18 
+-->

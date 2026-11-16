@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>블루베리 팔아요</title>
+        <script>
+            for(var i=1; i<=3; i++){
+                for(var j=1; j<3; j++){
+                    document.write(i,"행 ",j,"열 <br>");
+                }
+                document.write("<br>");
+            }
+
+            for(var i=1; i<=10; i++){
+                if(i==6) break;
+                document.write(i, "<br>");
+            }
+            document.write("---- break로 종료----<br><br>");
+
+            for(var i=1; i<=10; i++){
+                if(i%2==0) continue; //아래는 실행하지 않고 반복문으로 올라감
+                document.write(i, "는 홀수<br>");
+            }
+            document.write("---- continue 예제 종료----");
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

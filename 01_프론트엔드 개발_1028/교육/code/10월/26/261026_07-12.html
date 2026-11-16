@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>가상 클래스와 가상 요소</title>
+        <style>
+            .container{
+                width: 960px;
+                margin: 0 auto;
+            }
+            .navi{
+                width: 960px;
+                height: 60px;
+                padding-bottom: 10px;
+                border-bottom: 5px;
+            }
+            .navi ul{
+                list-style: none;
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+            .navi ul li{
+                display: inline-block;
+                width: 150px;
+                padding: 10px;
+            }
+            .navi a:hover, .navi a:focus{
+                background-color: #222;
+                color: white;
+            }
+            .navi a:active{
+                background-color: red;
+            }
+            input:checked + span{
+                color: blue;
+            }
+            input:disabled{
+                background: #ddd;
+                border: #ccc;
+            }
+            div fieldset{
+                margin-bottom: 25px;
+            }
+            div legend{
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navi">
+                <ul>
+                    <li><a>이용 안내</a></li>
+                    <li><a>객실 소개</a></li>
+                    <li><a>예약 방법 및 요금</a></li>
+                    <li><a>예약하기</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h2>이용객 정보를 입력하시오</h2>
+            <fieldset>
+                <legend>사용자 정보</legend>
+                <label>이름 <input type="text" disabled></label>
+            </fieldset>
+            <fieldset>
+                <legend>사용자 성별</legend>
+                <label><input type="radio" name="sex" value="man"><span>남성</span></label>
+                <label><input type="radio" name="sex" value="woman"><span>여성</span></label>
+            </fieldset>
+            <label>
+
+            </label>
+        </div>
+    </body>
+</html>

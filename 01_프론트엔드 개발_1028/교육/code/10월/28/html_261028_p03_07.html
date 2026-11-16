@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>블루베리 팔아요</title>
+        <script>
+            var id= "wwgmldms";
+            var pw= "1234qwer";
+
+            var user_id= prompt("아이디는?", "");
+            var user_pw= prompt("비밀번호는?", "");
+
+            if (id==user_id){
+                if (pw==user_pw){
+                    document.write("환영합니다! ",user_id, "님!");
+                }else{
+                    alert("비밀번호가 일치하지 않습니다.");
+                    location.reload();
+                }
+            }else{
+                alert("아이디가 일치하지 않습니다.");
+                location.reload();
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

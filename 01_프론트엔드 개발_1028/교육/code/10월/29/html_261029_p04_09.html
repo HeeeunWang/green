@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>새 창 띄우기</title>
+        <script>
+            function open_win(){
+                var width= 700;
+                var height= 500;
+                var left= screen.width/2 - width/2;
+                var top= screen.height/2 - height/2;
+                var mywin= window.open("http://www.naver.com", "popup", "top="+top+", left="+left+", width="+width+", height="+height+"scroolbars=yes");
+                var mywin2= window.open("http://www.naver.com", "popup", "top="+top+", left="+left+", width="+width+", height="+height+"scroolbars=yes");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>새 창 띄우기</h1>
+        <input type="button" value="네이버 사이트 새창으로 띄우기" onclick="open_win()">
+    </body>
+</html>

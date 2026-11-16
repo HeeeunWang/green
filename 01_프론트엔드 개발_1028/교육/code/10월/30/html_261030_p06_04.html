@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>블루베리 팔아요</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+        <script>
+            $(
+                function(){
+                    $("body").css("border", "1px solid blue")
+                    .css("width", "800px")
+                    .css("margin", "0 auto");                    
+                    $(".tit").css("background", "skyblue");
+                    $("#tit").css("background", "gray");
+                    $("h1, #tit").css("text-align", "center")
+                    .css("font-size", "50px");
+                    $("h3.tit2").css("border", "1px dotted green");
+                }
+            );
+        </script>
+        <style>
+            *{}
+        </style>
+    </head>
+    <body>
+        <h1>jquery</h1>
+        <h2 id="tit">선택자</h2>
+        <h3 class="tit">직접선택자</h3>
+        <h3>인접선택자</h3>
+        <h3 class="tit2">종속선택자</h3>
+    </body>
+</html>

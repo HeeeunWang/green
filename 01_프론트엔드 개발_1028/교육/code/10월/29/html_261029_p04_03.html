@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>가위 바위 보 게임</title>
+        <script>
+            var game= prompt("가위, 바위, 보 중 선택하세요!", "가위");
+            var gameNum;
+            switch(game){
+                case "가위": gameNum = 1;
+                break;
+                case "바위": gameNum = 2;
+                break;
+                case "보": gameNum = 3;
+                break;
+                default: alert("잘못 입력하셨습니다.");
+                location.reload();
+            }
+
+            var com= Math.ceil(Math.random()*3);
+            while(com == 0){
+                document.write("<p>WOW 어떻게 정확하게 0이?!</p>");
+                com= Math.ceil(Math.random()*3);
+            }
+            document.write("<p>나의 선택 ---></p>");
+            document.write("<img src=\"가위바위보_"+gameNum+".png\">");
+            document.write("<p>컴퓨터 ---></p>");
+            document.write("<img src=\"가위바위보_"+com+".png\">");
+            document.write("<p>결과 ---></p>");
+            if(gameNum==com){
+                document.write("<img src=\"비김.png\">");
+            }else if(gameNum>com){
+                document.write("<img src=\"이김.png\">");            
+            }else if((gameNum==1) && (com==3)){
+                document.write("<img src=\"이김.png\">");
+            }else{
+                document.write("<img src=\"짐.png\">");
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

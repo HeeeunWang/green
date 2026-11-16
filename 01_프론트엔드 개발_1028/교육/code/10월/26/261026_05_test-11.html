@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>TEST!</title>
+        <style>
+            header{
+                position: relative;
+                background-image: url("헤더.jpg");
+                height: 300px;
+                margin-bottom: 0px;
+                background-size: contain;
+                min-width: 1200px;
+            }
+            header h1{
+                position: absolute;
+                left: 30px;
+                bottom: 70px;
+                font-size: 60px;
+                color: white;
+                padding: 20px;
+            }
+            header h2{
+                position: absolute;
+                left: 30px;
+                bottom: 30px;
+                font-size: 20px;
+                color: yellowgreen;
+                padding-right: 20px;
+            }
+            .navi{
+                bottom: 00px;
+                background-color: rgb(21, 44, 21);
+                height: 40px auto;
+            }
+            .navi a, .navi a:visited{
+                color: white;
+            }
+            .navi a:hover, .navi a:active, .navi a:focus{
+                text-shadow: 0px 2px 2px black;
+                color: yellowgreen;
+            }
+            .navi ul{
+                list-style-type: none;
+                margin-top: 0;
+            }
+            .navi ul li{
+                display:inline-block;
+                background-color: rgb(21, 59, 21);
+                color: white;
+                width: 150px;
+                vertical-align: middle;
+                text-align: center;
+                margin: 8px;
+                margin-left: 0;
+            }
+            img{
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+            }
+            dl{
+                padding: 10px;
+            }
+            dl dt{
+                background-color: lightgray;
+                padding-left: 10px;
+            }
+            dl dd{
+                padding-top: 10px;
+                display: inline-block;
+            }
+            .articlebox{
+                display: inline;
+                float: left;
+                /* width: 70%; */
+                width: 900px;
+            }
+            .asidebox{
+                border: 1px solid gray;
+                border-radius: 10px;
+                display: inline;
+                float: right;
+                width: 250px;
+                padding: 10px;
+            }
+            .section1{
+                /* min-width: 1000px; */
+                width: 1200px;
+                align-content: center;
+                margin: 0 auto;
+            }
+            .maker{
+                border: 1px solid lightgray;
+                border-radius: 10px;
+                padding: 10px;
+                margin-bottom: 5px;
+            }
+            .footerbox{
+                background: lightgray;
+                padding: 10px;
+                padding-left: 50px; 
+                height: 150px;
+                min-width: 1200px;
+            }
+            .footermulti{
+                /* clear: both; */
+                column-count: 2;
+                background: lightgray;
+                padding: 10px;          
+            }
+            .footermulti h4{
+                break-before: column;
+            }
+            .footerdiv1{
+                display: inline;
+                float: left;
+                width: 350px;
+                margin: 0;
+            }
+            .footerdiv2{
+                
+                display: inline;
+                float: left;
+                width: 350px;
+                margin: 0;
+            }
+            #section2{
+                width: 500px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>오늘의 화방</h1>
+            <h2>장인이 도구를 더욱 가린다</h2>  
+        </header>
+        <!-- nav를 header에 넣고싶은데 위치를 못잡겠음 -->
+        <nav class="navi">
+            <ul>
+                <li><a herf="#" alt="" target="_blank">수채화 용품</a></li>
+                <li><a herf="#" alt="" target="_blank">아크릴 용품</a></li>
+                <li><a herf="#" alt="" target="_blank">유화 용품</a></li>
+                <li><a herf="#" alt="" target="_blank">보조 용품</a></li>
+            </ul>
+        </nav>
+        <section class="section1">
+            <article class="articlebox">
+                <h1>수채화 용품</h1>
+                <h2>국산 수채화 물감</h2>
+                <dl>
+                    <div class="maker">
+                        <dt>미젤로 미션</dt>
+                        <dd><img src="미젤로01.png" alt=""></dd>
+                        <dd><img src="미젤로02.png" alt=""></dd>
+                        <dd><img src="미젤로03.png" alt=""></dd>
+                    </div>
+                    <div class="maker">
+                        <dt>신한</dt>
+                        <dd><img src="신한01.png" alt=""></dd>
+                        <dd><img src="신한02.png" alt=""></dd>
+                        <dd><img src="신한03.png" alt=""></dd>
+                    </div>
+                    <div class="maker">
+                        <dt>알파</dt>
+                        <dd><img src="알파01.png" alt=""></dd>
+                        <dd><img src="알파02.png" alt=""></dd>
+                        <dd><img src="알파03.png" alt=""></dd>
+                    </div>
+                    <div class="maker">
+                        <dt>쉴드</dt>
+                        <dd><img src="쉴드01.png" alt=""></dd>
+                        <dd><img src="쉴드02.png" alt=""></dd>
+                        <dd><img src="쉴드03.png" alt=""></dd>
+                    </div>                    
+                </dl>             
+            </article>
+
+            <aside class="asidebox">
+                <h3>문의</h3>
+                <p>특정 제품 발주 및 대량 주문은 고객센터로 직접 통화하시는게 가장 정확하고 빠릅니다.</p>
+                <p>070-####-####</p>
+                <h3>오프라인 지점 안내</h3>
+                <ul>
+                    <li>동대문점</li>
+                    <li>수원점</li>
+                    <li>대전점</li>
+                </ul>
+            </aside>            
+        </section>
+        <footer class="footerbox">
+            <div class="footerdiv1">
+                <h4>사업자등록</h4>
+                <p>사업자번호 어쩌고저쩌고~~~</p>
+            </div>
+            <div class="footerdiv2">
+                <h4>고객센터</h4>
+                <p>070-####-####</p>
+            </div>               
+        </footer>  
+    </body>
+</html>

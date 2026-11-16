@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS 포지셔닝</title>
+        <style>
+            #popup1{
+                position: fixed;
+                top: 5px;
+                right: 5px;
+                width: 100px;
+                height: 100px;
+                /* background: orange; */
+                background-image: url("치이.jpg");
+                background-size: 100% 100%;
+            }
+            #popup2{
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+                width: 100px;
+                height: 100px;
+                /* background: orange; */
+                background-image: url("하치.jpg");
+                background-size: 100% 100%;
+            }
+            #content{
+                width: 400px;
+            }
+            p{line-height: 30px;}
+        </style>
+    </head>
+
+    <body>
+        <div id="popup1"></div>
+        <div id="content">
+            <p>                
+                먼작귀(ちいかわ / 치이카와)는 일본의 일러스트레이터 나가노 작가가 X에서 연재 중인 만화이다. 
+                귀여운 캐릭터, 밝은 분위기로 진행되는 스토리와 대조되는 부조리함이 녹아든 설정이 특징으로, 
+                2020년대에 일본과 한국을 비롯한 해외에서 엄청난 인기를 누리고 있는 캐릭터 IP다. 
+                2017년 5월 1일 작가의 트위터에 '이런 식으로 살고 싶다'며 올린 낙서에서 첫 등장했다. 
+                그렇게 작가의 이상향으로서 만들어진 캐릭터였지만 점차 설정이 부여되며 나가노 작가를 대표하는 하나의 캐릭터로 자리 잡았다.
+            </p>
+            <p>
+                개별 트위터 계정이 생성된 2020년 1월 1일 이후 스탬프 출시, 온라인 스토어, 지역 한정 팝업 스토어 개최 등 
+                빠른 캐릭터 사업 전개로 큰 인기를 얻고, 주술회전, 진격의 거인, 원피스 등 유명 만화들을 제치고 1위를 차지하고 
+                산리오, 도쿄 리벤저스, 나의 히어로 아카데미아 등 각종 애니메이션이나 캐릭터 브랜드들과 
+                콜라보 및 굿즈들이 쏟아져 나오는 등 2021년부터는 일본에서 독보적인 인기를 보이고 있다.
+            </p>
+        </div>
+        <div id="popup2"></div>
+    </body>
+</html>

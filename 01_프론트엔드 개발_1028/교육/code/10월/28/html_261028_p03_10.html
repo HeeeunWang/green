@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>블루베리 팔아요</title>
+        <style>
+            *{margin: 0;}
+            .blue{color: blue;}
+            .red{color: red;}
+        </style>
+        <script>
+            var i=20;
+            while(i>=10){
+                if(i%2==0){
+                    document.write("<h1 class='blue'>"+i+"</h1>");
+                }else{
+                    document.write("<h1 class='red'>"+i+"</h1>");
+                }
+                i--;
+            }
+
+            i=10;
+            do{
+                document.write("do-while 테스트. 한번만 돌아가는지?");
+            }while(i<3)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

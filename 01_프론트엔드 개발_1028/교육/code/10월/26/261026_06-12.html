@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>연결 선택자</title>
+        <style>
+            #container > ul{
+                border: 1px dotted blue;
+            }
+            h1+ul{
+                color: skyblue;
+            }
+            h1~ul{
+                font-weight: bold;
+            }
+            a[herf]{
+                background: navy;
+                color: white;
+            }
+            a:hover{
+                background: blueviolet;
+            }
+            a:hover[target="_blank"]{
+                background: blue;
+            }
+            a[class~=botton]:hover{
+                background: red;
+                margin: 2px;
+            }
+            a[title*="1층"]{
+                font-style: italic;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section id="container">
+            <h1>예약 방법 및 요금</h1>    
+            <ul>
+                <li><a class="flat botton">시설 문의</a></li>
+                <li><a class="botton">예약 현황</a></li>
+            </ul>        
+            <ul>
+                <li>
+                    예약 방법
+                    <ul>
+                        <li>직접 통화</li>
+                        <li>문자 남기기</li>
+                    </ul>
+                </li>
+                <li>
+                    숙소
+                    <ul>
+                        <li><a herf="#" target="_blank" title="1층">101호</a></li>
+                        <li><a herf="#" title="1층-102호">102호</a></li>
+                        <li><a herf="#" target="_blank" title="1층 103호">103호</a></li>
+                        <li><a herf="#" title="2층 201호">201호</a></li>
+                        <li><a herf="#" title="2층 202호">202호</a></li>
+                    </ul>
+                </li>
+                <li>
+                    요금
+                    <ul>
+                        <li>1인: 40,000원</li>
+                        <li>2인: 60,000원</li>
+                        <li>3인: 80,000원</li>
+                        <li>4인: 100,000원</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+
+            </ul>
+        </section>
+        
+    </body>
+</html>

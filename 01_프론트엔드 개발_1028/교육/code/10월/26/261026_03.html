@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>표 스타일</title>
+        <style>
+            table, th, td{
+                border: 1px solid gray;
+            }
+            .table1{
+                /* border-collapse: collapse; */
+                width: 360px;
+                height: 200px;
+                table-layout: fixed;
+                word-break: break-all;
+            }
+            .table1 td{
+                width: 130px;
+                padding: 5px;
+                border: 1px dotted black;
+                vertical-align: top;
+                empty-cells: hide;
+            }
+            .table1 th{
+                text-align: right;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <table class="table1">
+            <tr>
+                <th>제목</th>
+                <td>한글로띄어쓰기없게길게길게붙여쓰기</td>
+                <td>long_description_without_space</td>
+            </tr>
+            <tr>
+                <th>제목</th>
+                <td>한글로띄어쓰기없게길게길게붙여쓰기</td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

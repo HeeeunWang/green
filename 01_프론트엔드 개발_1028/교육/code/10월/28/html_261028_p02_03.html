@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>블루베리 팔아요</title>
+        <script>
+            var a=10;
+            var b=3;
+            var result= a>b ? "a가 크다":"b가 크다";
+            document.write(result, "<br>");
+
+            var name= prompt("이름은?", "");
+            var height= prompt("키는?", 0);
+            var weight= prompt("몸무게는?", 0);
+
+            var normal_w= (height-100)*0.9;
+            var result= (normal_w-5<weight) && (normal_w+5>weight);
+            result= result? "적정체중 이에요":"적정체중이 아닙니다";
+            document.write(name+"님은 "+result);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

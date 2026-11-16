@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 레이아웃</title>
+        <style>
+            section{
+                padding: 20px;
+                width: 600px;
+                margin: 20px auto;
+                border: 1px solid gray;
+                border-radius: 10px;
+            }
+            h2{
+                font-size: 25px;
+            }
+            h3{
+                font-size: 25px;
+            }
+            .multi{
+                /* column-width: 100px; */
+                column-count: 3;
+                column-rule: 1px dotted black;
+            }
+            .multi h3{
+                break-before: column;
+            }
+            .no-col{
+                column-span: all;
+                background: lightgray;
+                margin-top: 20px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <h1>건강에 좋은 식품 - Super food</h1>
+            <div class="multi">
+                <h2>코코넛 오일</h2>
+                <p>
+                    남미 파나마에서는 코코넛오일 한 컵이면 모든 병이 낫는다 라고 이야기할 정도로
+                    그 효능이 뛰어나다. 코코넛 오일에 들어있는 중사슬 지방산은 콜레스테롤 수치에
+                    나쁜 영향을 주지 않는 건강한 지방산이다.
+                </p>
+                <h2>아보카도</h2>
+                <p>
+                    나무에서 열리는 버터라고 불릴 만큼 몸에 좋은 지방인 오메가 3와 단백질, 비타민 
+                    E와 같은 항산화 성분이 풍부한 과일이다. 알파 카로틴이 풍부하게 들어 있어 여러
+                    항암 효과가 뛰어난 것으로 알려져 있다.
+                </p>
+                <h2>케일</h2>
+                <p>
+                    케일은 브로콜리, 양배추, 유채, 청경채와 같은 배추과 식불로써 세계보건기구에서
+                    최고의 녹황색 채소로 선정되었다. 베타카로틴과 엽록소가 풍부해 체내 유전자를 회북
+                    하도록 돕는 항암효과가 뛰어나다.
+                </p>
+                <h3>블루베리</h3>
+                <p>
+                    블루베리는 우리 몸이 산화하는 현상을 막아주는 항산화 물질이 가장 많은 식품으로
+                    알려져있다. 미국 농무부 인간영양연구소에서 박힌 자료에 따르면 블루베리의 안토시아닌
+                    이라는 물질은 시력 향상에 뛰어난 효과가 있다.
+                </p>
+                <div class="no-col">
+                    <h2>아몬드</h2>
+                    <p>
+                        혈관 질환에 좋은 오메가3, 섬유소, 비타민 E가 풍부해 항산화 효과가 높으며 콜레스테롤
+                        수치를 낮추는 L-아르기닌 등의 좋은 영양소도 들어있다.
+                    </p>
+                </div>                
+            </div>
+        </section>
+    </body>
+</html>

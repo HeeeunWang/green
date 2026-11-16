@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>새로 만들기</title>
+        <style>
+            /* *{
+                margin: 0px;
+                padding: 0px;
+            } */
+            ul{
+                list-style: none;
+            }
+            ul li{
+                float: left;
+                /* display: inline-block; */
+                text-decoration: none;
+                border: 1px solid gray;
+                width: 100px;
+                list-style: none;
+                text-align: center;
+            }
+            ul li a:hover{
+                background: #222;
+                color: white;
+            }
+
+            ul li:first-child{
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            ul li:last-child{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">JQuery</a></li>
+        </ul>
+    </body>
+</html>

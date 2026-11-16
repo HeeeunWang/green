@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>visibility 속성</title>
+        <style>
+            img{
+                margin: 10px;
+                padding: 5px;
+                border: 1px solid gray;
+            }
+            .invisible{
+                visibility: hidden;
+            }
+            div #wrapper{
+                position: relative;
+            }
+            .box{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                font-size: 26px;
+            }
+            #b1{
+                left: 50px;
+                top: 300px;
+                background: red;
+                z-index: 1;
+            }
+            #b2{
+                left: 110px;
+                top: 320px;
+                background: yellow;
+                z-index: 3;
+            }
+            #b3{
+                left: 70px;
+                top: 360px;
+                background: blue;
+                z-index: 2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="치이.jpg">
+        <img src="하치.jpg" class="invisible">
+        <img src="사기.jpg">
+
+        <div id="wrapper">
+            <div id="b1" class="box"></div>
+            <div id="b2" class="box"></div>
+            <div id="b3" class="box"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>구조 가상 클래스</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                text-align: center;
+                width: 400px;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            table{
+                margin: 10px auto;
+                width: 150px;                
+                border-collapse: collapse;
+            }
+            table tr td{
+                border: 1px solid black;
+            }
+            table tr:nth-child(2n+0){
+                background: lightgray;
+                color: #666;
+            }
+            ul.navi li{
+                display: inline-block;
+                border: 1px solid #222;
+                text-align: center;
+                width: 100px;
+                
+            }
+            ul.navi li:first-child{
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            ul.navi li:last-child{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            ul.list li.hot::after{
+                content: "NEW!";
+                background: red;
+                font-size: 7px;
+                padding: 2px 4px;
+                margin: 0px 10px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>건강에 좋은 건강 식품</h2>
+            <table>
+                <tr><td>블루베리</td></tr>
+                <tr><td>귀리</td></tr>
+                <tr><td>토마토</td></tr>
+                <tr><td>시금치</td></tr>
+                <tr><td>적포도주</td></tr>
+                <tr><td>견과류</td></tr>
+                <tr><td>브로콜리</td></tr>
+                <tr><td>연어</td></tr>
+                <tr><td>마늘</td></tr>
+                <tr><td>녹차</td></tr>
+            </table>
+        </div>
+        <div>
+            <ul class="navi">
+                <li>Home</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JQuery</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list">
+                <li class="hot">제품 A</li>
+                <li>제품 B</li>
+                <li>제품 C</li>
+                <li class="hot">제품 D</li>
+            </ul>
+        </div>
+        
+    </body>
+</html>
