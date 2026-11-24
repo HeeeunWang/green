@@ -1,0 +1,19 @@
+package P18;
+import java.io.File;
+import java.io.FileWriter;
+
+public class FileWriterExample {
+    public static void main(String[] args) {
+        try {
+            File file = new File("C:/Temp/file1.txt");
+            FileWriter fw = new FileWriter(file, true);
+            fw.write("Filewrite는 한글로된 "+"\r\n");
+            fw.write("문자열을 바로 출력할 수 있다."+"\r\n");
+            fw.flush();
+            fw.close();            
+            System.out.println("저장 완료");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
